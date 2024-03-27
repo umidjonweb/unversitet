@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation, AutoPlay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const modules = ref([Navigation])
+const modules = ref([Navigation, Autoplay])
 
 </script>
 <template>
    <div class="partner container !my-40">
       <h2 class="text-center font-poppins-600 text-2xl mt-20 mb-12">Hamkorlar</h2>
-      <swiper :modules="modules" :navigation="true" :autoplay="{
+      <swiper :modules="modules" 
+      :navigation="true" 
+      :centeredSlides="true"
+      :autoplay="{
          delay: 2500,
          disableOnInteraction: false,
       }" 
