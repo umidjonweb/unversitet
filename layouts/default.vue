@@ -8,7 +8,7 @@
       <div class="h-full grow">
          <slot />
       </div>
-      <!-- <Footer/> -->
+      <Footer/>
    </div>
    
 </template>
